@@ -14,30 +14,36 @@ GREEN		= \033[0;32m
 RED		= \033[0;31m
 RESET		= \033[0m
 
-TESTS		= check-for-extra-P.sh			\
+TESTS		= check-for-no-map.sh 			\
+		check-for-missing-argv.sh		\
+		check-for-multiple-argv.sh		\
 		check-for-invalid-extension.sh		\
 		check-for-invalid-parameter.sh		\
+		check-for-square-map.sh			\
+		check-for-not-rectangular-map.sh	\
+		check-for-missing-W.sh			\
 		check-for-missing-C.sh			\
 		check-for-missing-E.sh			\
 		check-for-missing-P.sh			\
-		check-for-missing-W.sh			\
-		check-for-not-rectangular-map.sh	\
-		check-for-square-map.sh
+		check-for-extra-P.sh			
 
 all:		invalid-maps
 			
 invalid-maps: 			
 		@ echo "*-------| INVALID MAP TESTS |--------*"
-		@ echo 
-		@ ./check-for-extra-P.sh				
-		@ ./check-for-invalid-extension.sh		
-		@ ./check-for-invalid-parameter.sh		
+		@ echo
+		@ ./check-for-no-map.sh
+		@ ./check-for-missing-argv.sh
+		@ ./check-for-multiple-argv.sh
+		@ ./check-for-invalid-extension.sh
+		@ ./check-for-square-map.sh
+		@ ./check-for-not-rectangular-map.sh
+		@ ./check-for-invalid-parameter.sh
+		@ ./check-for-missing-W.sh				
 		@ ./check-for-missing-C.sh				
 		@ ./check-for-missing-E.sh				
-		@ ./check-for-missing-P.sh				
-		@ ./check-for-missing-W.sh				
-		@ ./check-for-not-rectangular-map.sh	
-		@ ./check-for-square-map.sh
+		@ ./check-for-missing-P.sh					
+		@ ./check-for-extra-P.sh
 		@ echo 
 		@ echo "*-------|-------------------|--------*"
 
