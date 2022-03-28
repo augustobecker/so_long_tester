@@ -11,23 +11,30 @@
 
 Such as: 
 
-• Extra P parameter.   		[extra-p]
+• No map.                 [no-map]
+
+• Missing argv.           [miss-argv]
   
-• Missing P parameter. 		[miss-p]
+• Multiple argv.          [mult-argv]
+  
+• Invalid extension.  		[invalid-extension]
+
+• Square Map.				      [square]
+
+• Not rectangular map. 		[not-rectangle]  
+  
+• Invalid map parameter.  [invalid-paramater]
+
+• Missing W parameter.		[miss-w]
 
 • Missing C parameter. 		[miss-c]
 
 • Missing E parameter. 		[miss-e]
+  
+• Missing P parameter. 		[miss-p]
+  
+• Extra P parameter.   		[extra-p]
 
-• Missing W parameter.		[miss-w]
-
-• Square Map.				[square]
-
-• Not rectangular map. 		[not-rectangle]
-
-• Invalid extension.  		[invalid-extension]
-
-• Invalid map parameter.  	[invalid-paramater]
   
 ## How to get started:
   
