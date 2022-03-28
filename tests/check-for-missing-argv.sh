@@ -19,7 +19,7 @@ ERROR=$(./../../so_long | grep "Error" | wc -l)
 
 if [ ${ERROR} -ge 1 ]
 then
-	echo -e "Check for missing argv: $GREEN		   [OK] $RESET"
+	echo -e "Check for missing argv: $GREEN	[OK] $RESET"
 else
-	echo -e "Check for missing argv: $RED        [KO] $RESET"
+	echo -e "Check for missing argv: $RED [KO] $RESET"
 fi
