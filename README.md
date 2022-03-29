@@ -41,10 +41,17 @@ Such as:
 Clone this tester in your so_long repository.
   
 ## Commands
- 
-make mandatory = launch mandatory tests
- 
-make [test_name] = launch only the specific test requested.
+
+First, create your so_long binary
+	
+cd into so_long_tester
+	
+cd into tester
+	
+and then
+	
+	make
+
 ## Author
 <div>
     <img height="180em" src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png">
