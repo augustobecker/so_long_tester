@@ -15,7 +15,7 @@
 GREEN="\033[0;32m"
   RED="\033[0;31m"
 RESET="\033[0m"
-  MAP="/maps/invalid/map-not-rectangular.ber"
+  MAP="../maps/invalid/map-not-rectangular.ber"
 ERROR=$(./../../so_long $MAP | grep "Error" | wc -l)
 
 if [ ${ERROR} -ge 1 ]
