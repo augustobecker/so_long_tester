@@ -39,6 +39,42 @@ game:
 
 permission:
 		@chmod -R a+x *
+		
+no-map:
+		@ ./${PATH_TEST}/check-for-no-map.sh
+
+miss-argv:
+		@ ./${PATH_TEST}/check-for-missing-argv.sh
+		
+mult-argv:
+		@ ./${PATH_TEST}/check-for-multiple-argv.sh
+		
+invalid-extension:
+		@ ./${PATH_TEST}/check-for-invalid-extension.sh
+		
+square:
+		@ ./${PATH_TEST}/check-for-square-map.sh
+
+not-rectangle:
+		@ ./${PATH_TEST}/check-for-not-rectangular-map.sh
+
+invalid-paramater:
+		@ ./${PATH_TEST}/check-for-invalid-parameter.sh
+
+miss-w:
+		@ ./${PATH_TEST}/check-for-missing-W.sh
+		
+miss-c:
+		@ ./${PATH_TEST}/check-for-missing-C.sh
+
+miss-e:
+		@ ./${PATH_TEST}/check-for-missing-E.sh
+		
+miss-p:
+		@ ./${PATH_TEST}/check-for-missing-P.sh
+		
+extra-p:
+		@ ./${PATH_TEST}/check-for-extra-P.sh
 
 invalid-maps:
 		@ echo
@@ -59,4 +95,8 @@ invalid-maps:
 		@ echo
 		@ echo "*-------|-------------------|--------*"
 
-.PHONY:		all m game permission invalid-maps
+
+.PHONY:		all m game permission no-map miss-argv mult-argv 		\
+		invalid-extension square not-rectangle invalid-paramater 	\
+		miss-w miss-c miss-e miss-p extra-p invalid-maps
+
