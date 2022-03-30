@@ -44,7 +44,7 @@ Clone this tester in your so_long repository.
 	
 cd into so_long_tester
 	
-make mandatory = launch mandatory tests.
+make m = launch mandatory tests.
 
 make [test_name] = launch only the specific test requested.
 
