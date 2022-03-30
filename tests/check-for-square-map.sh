@@ -22,5 +22,5 @@ if [ ${ERROR} -ge 1 ]
 then
 	echo -e "Check for square Map: $GREEN		[OK] $RESET"
 else
-	echo -e "Check for square Map: $RED       [KO] $RESET"
+	echo -e "Check for square Map: $RED          [KO] $RESET"
 fi
