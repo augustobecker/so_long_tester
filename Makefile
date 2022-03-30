@@ -30,13 +30,15 @@ TESTS		= ${PATH_TEST}/check-for-no-map.sh 		\
 		${PATH_TEST}/check-for-missing-P.sh		\
 		${PATH_TEST}/check-for-extra-P.sh
 
-all:		game permission invalid-maps
+all:		m
+
+m:		game permission invalid-maps
 
 game:
 		@ make -C ${PATH_GAME}
 
 permission:
-		@chmod a+x *
+		@chmod -R a+x *
 
 invalid-maps:
 		@ echo
@@ -57,4 +59,4 @@ invalid-maps:
 		@ echo
 		@ echo "*-------|-------------------|--------*"
 
-.PHONY:		all game permission invalid-maps
+.PHONY:		all m game permission invalid-maps
