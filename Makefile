@@ -32,7 +32,7 @@ TESTS		= ${PATH_TEST}/check-for-no-map.sh 		\
 
 all:		m
 
-m:		game permission invalid-maps
+m:		game permission invalid-maps valid-maps
 
 game:
 		@ make -C ${PATH_GAME}
@@ -51,9 +51,6 @@ mult-argv:
 		
 invalid-extension:
 		@ ./${PATH_TEST}/check-for-invalid-extension.sh
-		
-square:
-		@ ./${PATH_TEST}/check-for-square-map.sh
 
 not-rectangle:
 		@ ./${PATH_TEST}/check-for-not-rectangular-map.sh
@@ -75,6 +72,9 @@ miss-p:
 		
 extra-p:
 		@ ./${PATH_TEST}/check-for-extra-P.sh
+		
+square:
+		@ ./${PATH_TEST}/check-for-square-map.sh
 
 invalid-maps:
 		@ echo
@@ -92,6 +92,8 @@ invalid-maps:
 		@ ./${PATH_TEST}/check-for-missing-P.sh
 		@ ./${PATH_TEST}/check-for-extra-P.sh
 		@ echo
+		
+valid-maps:	
 		@ echo "*-------|-------------------|--------*"
 		@ echo 
 		@ echo "*-------|  VALID MAP TESTS  |--------*"
@@ -99,8 +101,9 @@ invalid-maps:
 		@ ./${PATH_TEST}/check-for-square-map.sh
 		@ echo
 		@ echo "*-------|-------------------|--------*"
+		@ echo
 
 
 .PHONY:		all m game permission no-map miss-argv mult-argv 		\
 		invalid-extension square not-rectangle invalid-paramater 	\
-		miss-w miss-c miss-e miss-p extra-p invalid-maps
+		miss-w miss-c miss-e miss-p extra-p invalid-maps valid-maps
