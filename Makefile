@@ -6,7 +6,7 @@
 #    By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 16:02:17 by acesar-l          #+#    #+#              #
-#    Updated: 2022/03/30 06:42:48 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/04/12 10:51:57 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,6 @@ invalid-maps:
 		@ ./${PATH_TEST}/check-for-missing-argv.sh
 		@ ./${PATH_TEST}/check-for-multiple-argv.sh
 		@ ./${PATH_TEST}/check-for-invalid-extension.sh
-		@ ./${PATH_TEST}/check-for-square-map.sh
 		@ ./${PATH_TEST}/check-for-not-rectangular-map.sh
 		@ ./${PATH_TEST}/check-for-invalid-parameter.sh
 		@ ./${PATH_TEST}/check-for-missing-W.sh
@@ -94,9 +93,14 @@ invalid-maps:
 		@ ./${PATH_TEST}/check-for-extra-P.sh
 		@ echo
 		@ echo "*-------|-------------------|--------*"
+		@ echo 
+		@ echo "*-------|  VALID MAP TESTS  |--------*"
+		@ echo
+		@ ./${PATH_TEST}/check-for-square-map.sh
+		@ echo
+		@ echo "*-------|-------------------|--------*"
 
 
 .PHONY:		all m game permission no-map miss-argv mult-argv 		\
 		invalid-extension square not-rectangle invalid-paramater 	\
 		miss-w miss-c miss-e miss-p extra-p invalid-maps
-
