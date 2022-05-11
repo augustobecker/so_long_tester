@@ -6,7 +6,7 @@
 #    By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 16:02:17 by acesar-l          #+#    #+#              #
-#    Updated: 2022/04/12 10:51:57 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/05/11 10:51:57 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,6 @@ TESTS		= ${PATH_TEST}/check-for-no-map.sh 		\
 		${PATH_TEST}/check-for-multiple-argv.sh		\
 		${PATH_TEST}/check-for-invalid-extension.sh	\
 		${PATH_TEST}/check-for-invalid-parameter.sh	\
-		${PATH_TEST}/check-for-square-map.sh		\
 		${PATH_TEST}/check-for-missing-W.sh		\
 		${PATH_TEST}/check-for-missing-C.sh		\
 		${PATH_TEST}/check-for-missing-E.sh		\
@@ -68,9 +67,6 @@ miss-p:
 		
 extra-p:
 		@ ./${PATH_TEST}/check-for-extra-P.sh
-		
-square:
-		@ ./${PATH_TEST}/check-for-square-map.sh
 
 invalid-maps:
 		@ echo
@@ -87,18 +83,7 @@ invalid-maps:
 		@ ./${PATH_TEST}/check-for-missing-P.sh
 		@ ./${PATH_TEST}/check-for-extra-P.sh
 		@ echo
-		
-valid-maps:	
-		@ echo "*-------|-------------------|--------*"
-		@ echo 
-		@ echo "*-------|  VALID MAP TESTS  |--------*"
-		@ echo
-		@ ./${PATH_TEST}/check-for-square-map.sh
-		@ echo
-		@ echo "*-------|-------------------|--------*"
-		@ echo
-
 
 .PHONY:		all m game permission no-map miss-argv mult-argv 		\
-		invalid-extension square invalid-paramater			\
+		invalid-extension invalid-paramater				\
 		miss-w miss-c miss-e miss-p extra-p invalid-maps valid-maps
