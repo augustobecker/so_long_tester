@@ -20,8 +20,6 @@ Such as:
 • Invalid extension.  		[invalid-extension]
 
 • Square Map.				      [square]
-
-• Not rectangular map. 		[not-rectangle]  
   
 • Invalid map parameter.  [invalid-paramater]
 
