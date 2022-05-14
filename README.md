@@ -18,8 +18,6 @@ Such as:
 • Multiple argv.          [mult-argv]
   
 • Invalid extension.  		[invalid-extension]
-
-• Square Map.				      [square]
   
 • Invalid map parameter.  [invalid-paramater]
 
