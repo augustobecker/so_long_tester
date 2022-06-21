@@ -30,8 +30,9 @@ Such as:
 • Missing P parameter. 		[miss-p]
   
 • Extra P parameter.   		[extra-p]
+	
+• Map with an Empty Line.   	[empty-line]	
 
-  
 ## How to get started:
   
 Clone this tester in your so_long repository.
@@ -47,11 +48,16 @@ make [test_name] = launch only the specific test requested.
 ## Outputs
 	
 ![image](https://user-images.githubusercontent.com/81205527/160744567-c64eb579-5528-4272-b4a6-579085aaebdf.png)
+
+## How it works:
+	
+The tester uses some invalid maps to test a series of map validations.
+It returns OK if when executed with the maps the code outputs "Error"(as asked in the subject).
 	
 ## Author
 <div>
-    <img height="180em" src="https://user-images.githubusercontent.com/81205527/152089472-0aa06bd9-d882-4c83-adfc-8230d1e958c1.png">
-    
+	<img height="200em" src="https://user-images.githubusercontent.com/81205527/174709160-f4bc029d-b667-469b-b2a7-4e036f1c5349.png">
+	
 <strong> Augusto Becker | acesar-l | 🇧🇷👨‍🚀</strong>
     
 :wave: How to reach me: 
