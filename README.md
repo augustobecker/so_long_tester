@@ -5,8 +5,6 @@
 
 <p align="center"><a href="https://www.42sp.org.br/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=SP&color=000&style=for-the-badge&logo=42""></a></p>
 
-
-
 <h2  align="center"> Tester for a series of map validations.</h2>
 
 Such as: 
@@ -53,6 +51,10 @@ make [test_name] = launch only the specific test requested.
 	
 The tester uses some invalid maps to test a series of map validations.
 It returns OK if when executed with the maps the code outputs "Error"(as asked in the subject).
+
+If you're looking for an implementation of so_long you can check my project here: [so_long](https://github.com/augustobecker/so_long).
+
+To see other projects developed by me at 42, click here: [42 Cursus](https://github.com/augustobecker/42cursus).
 	
 <h2  align="center">Author</h2>
 <div align="center">
