@@ -6,7 +6,7 @@
 #    By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/25 16:02:17 by acesar-l          #+#    #+#              #
-#    Updated: 2022/05/11 10:51:57 by acesar-l         ###   ########.fr        #
+#    Updated: 2022/07/14 20:09:25 by acesar-l         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,11 +26,12 @@ TESTS		= ${PATH_TEST}/check-for-no-map.sh 		\
 		${PATH_TEST}/check-for-missing-C.sh		\
 		${PATH_TEST}/check-for-missing-E.sh		\
 		${PATH_TEST}/check-for-missing-P.sh		\
-		${PATH_TEST}/check-for-extra-P.sh
+		${PATH_TEST}/check-for-extra-P.sh		\
+		${PATH_TEST}/check-for-empty-line.sh 
 
 all:		m
 
-m:		game permission invalid-maps valid-maps
+m:		game permission invalid-maps
 
 game:
 		@ make -C ${PATH_GAME}
@@ -68,6 +69,9 @@ miss-p:
 extra-p:
 		@ ./${PATH_TEST}/check-for-extra-P.sh
 
+empty-line:
+		@ ./${PATH_TEST}/check-for-empty-line.sh
+
 invalid-maps:
 		@ echo
 		@ echo "*-------| INVALID MAP TESTS |--------*"
@@ -82,8 +86,9 @@ invalid-maps:
 		@ ./${PATH_TEST}/check-for-missing-E.sh
 		@ ./${PATH_TEST}/check-for-missing-P.sh
 		@ ./${PATH_TEST}/check-for-extra-P.sh
+		@ ./${PATH_TEST}/check-for-empty-line.sh
 		@ echo
 
 .PHONY:		all m game permission no-map miss-argv mult-argv 		\
 		invalid-extension invalid-paramater				\
-		miss-w miss-c miss-e miss-p extra-p invalid-maps valid-maps
+		miss-w miss-c miss-e miss-p extra-p empty-line invalid-maps
