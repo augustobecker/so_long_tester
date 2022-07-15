@@ -17,12 +17,22 @@ GREEN="\033[0;32m"
   RED="\033[0;31m"
 RESET="\033[0m"
   MAP="maps/valid/map1.ber"
-EXTRA="maps/valid/map2.ber"
-ERROR=$(./../so_long $MAP $EXTRA | grep "Error" | wc -l)
+EXTRA1="maps/valid/map2.ber"
+EXTRA2="maps/valid/map3.ber"
+ERROR1=$(./../so_long $MAP $EXTRA1 | grep "Error" | wc -l)
+ERROR2=$(./../so_long $MAP $EXTRA1 $EXTRA2 | grep "Error" | wc -l)
 
-if [ ${ERROR} -ge 1 ]
+if [ ${ERROR1} -ge 1 ]
 then
-	echo -e "${CYAN}Check for multiple argv: $GREEN       [OK] $RESET"
+	echo -e -n "${CYAN}Check for multiple argv: $GREEN       [OK] $RESET"
 else
-	echo -e "${CYAN}Check for multiple argv: $RED       [KO] $RESET"
+	echo -e -n "${CYAN}Check for multiple argv: $RED       [KO] $RESET"
+fi
+
+
+if [ ${ERROR2} -ge 1 ]
+then
+	echo -e "$GREEN[OK] $RESET"
+else
+	echo -e "$RED[KO] $RESET"
 fi
