@@ -12,6 +12,7 @@
 #
 #
 
+ CYAN="\033[0;36m"
 GREEN="\033[0;32m"
   RED="\033[0;31m"
 RESET="\033[0m"
@@ -20,7 +21,7 @@ ERROR=$(./../so_long $MAP | grep "Error" | wc -l)
 
 if [ ${ERROR} -ge 1 ]
 then
-	echo -e "Check for missing P: $GREEN           [OK] $RESET"
+	echo -e "${CYAN}Check for missing P: $GREEN           [OK] $RESET"
 else
-	echo -e "Check for missing P: $RED           [KO] $RESET"
+	echo -e "${CYAN}Check for missing P: $RED           [KO] $RESET"
 fi
