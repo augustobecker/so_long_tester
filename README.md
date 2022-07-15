@@ -16,6 +16,8 @@ Such as:
 • Multiple argv.          [mult-argv]
   
 • Invalid extension.  		[invalid-extension]
+
+• Map with an Empty Line.   	[empty-line]	
   
 • Invalid map parameter.  [invalid-paramater]
 
@@ -29,7 +31,6 @@ Such as:
   
 • Extra P parameter.   		[extra-p]
 	
-• Map with an Empty Line.   	[empty-line]	
 
 <h2  align="center"> How to get started:</h2>
   
@@ -45,7 +46,7 @@ make [test_name] = launch only the specific test requested.
 
 <h2  align="center"> Outputs</h2>
 	
-![image](https://user-images.githubusercontent.com/81205527/179053946-8b651f11-6ee5-4168-b005-495b2a8e3f00.png)
+![image](https://user-images.githubusercontent.com/81205527/179241991-46f811ce-0eb8-4172-9ba5-b5d6d4916a56.png)
 
 <h2  align="center"> How it works:</h2>
 	
