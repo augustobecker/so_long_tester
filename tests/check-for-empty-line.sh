@@ -8,10 +8,11 @@
 #   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+
 #                                                +#+#+#+#+#+   +#+
 #   Created: 2021/06/20 23:43:10 by acesar-l          #+#    #+#
-#   Updated: 2021/07/14 23:43:41 by acesar-l         ###   ########.fr
+#   Updated: 2021/07/15 10:43:41 by acesar-l         ###   ########.fr
 #
 #
 
+ CYAN="\033[0;36m"
 GREEN="\033[0;32m"
   RED="\033[0;31m"
 RESET="\033[0m"
@@ -24,9 +25,9 @@ ERROR3=$(./../so_long $MAP3 | grep "Error" | wc -l)
 
 if [ ${ERROR1} -ge 1 ]
 then
-	echo -e -n "Check Map with an Empty Line: $GREEN  [OK] $RESET"
+	echo -e -n "${CYAN}Check Map with an Empty Line: $GREEN  [OK] $RESET"
 else
-	echo -e -n "Check Map with an Empty Line: $RED  [KO] $RESET"
+	echo -e -n "${CYAN}Check Map with an Empty Line: $RED  [KO] $RESET"
 fi
 
 if [ ${ERROR2} -ge 1 ]
