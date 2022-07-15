@@ -10,6 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
+PURPLE			= \033[0;35m
 GREEN			= \033[0;32m
 RED			= \033[0;31m
 RESET			= \033[0m
@@ -31,7 +32,7 @@ TESTS			= ${PATH_TEST}/check-for-no-map.sh 		\
 
 all:			m
 
-m:			game permission invalid-maps
+m:			game permission tester
 
 game:
 			@ make -C ${PATH_GAME}
@@ -73,9 +74,11 @@ extra-p:
 			@ ./${PATH_TEST}/check-for-extra-P.sh
 
 
-invalid-maps:
+tester:
 			@ echo
-			@ echo "*-------| INVALID MAP TESTS |--------*"
+			@ echo "${PURPLE}***************************************************************${RESET}"
+			@ echo "${PURPLE}*                     so_long_tester                          *${RESET}"
+			@ echo "${PURPLE}***************************************************************${RESET}"
 			@ echo
 			@ ./${PATH_TEST}/check-for-no-map.sh
 			@ ./${PATH_TEST}/check-for-missing-argv.sh
@@ -89,7 +92,9 @@ invalid-maps:
 			@ ./${PATH_TEST}/check-for-missing-P.sh
 			@ ./${PATH_TEST}/check-for-extra-P.sh
 			@ echo
+			@ echo "${PURPLE}***************************************************************${RESET}"
+			@ echo
 
 .PHONY:			all m game permission no-map miss-argv mult-argv 		\
 			invalid-extension empty-line invalid-paramater			\
-			miss-w miss-c miss-e miss-p extra-p invalid-maps
+			miss-w miss-c miss-e miss-p extra-p tester
