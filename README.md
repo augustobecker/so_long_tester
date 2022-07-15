@@ -46,7 +46,7 @@ make [test_name] = launch only the specific test requested.
 
 <h2  align="center"> Outputs</h2>
 	
-![image](https://user-images.githubusercontent.com/81205527/179241991-46f811ce-0eb8-4172-9ba5-b5d6d4916a56.png)
+![image](https://user-images.githubusercontent.com/81205527/179243905-d6422eb4-3a2e-4e5b-a189-22dc6284fd14.png)
 
 <h2  align="center"> How it works:</h2>
 	
