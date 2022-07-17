@@ -25,7 +25,7 @@
  ERROR3=$(./../so_long $MAP3 | grep "Error" | wc -l)
  ERROR4=$(./../so_long $MAP4 | grep "Error" | wc -l)
 
-if [ ${ERROR} -ge 1 ]
+if [ ${ERROR1} -ge 1 ]
 then
 	echo -e -n "${CYAN}Check for extra P: $GREEN             [OK] $RESET"
 else
