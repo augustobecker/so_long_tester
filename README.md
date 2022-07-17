@@ -17,7 +17,9 @@ Such as:
   
 • Invalid extension.  		[invalid-extension]
 
-• Map with an Empty Line.   	[empty-line]	
+• Map with an Empty Line.   	[empty-line]
+
+• Not Rectangular Map.   	[not-rectangular]
   
 • Invalid map parameter.  [invalid-paramater]
 
