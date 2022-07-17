@@ -3,7 +3,7 @@
 #
 #
 #                                                        :::      ::::::::
-#   SoLongTester/check-for-no-rectangular-map.sh        :+:      :+:    :+:
+#   SoLongTester/check-for-not-rectangular-map.sh       :+:      :+:    :+:
 #                                                    +:+ +:+         +:+
 #   By: acesar-l <acesar-l@student.42sp.org.br>    +#+  +:+       +#+
 #                                                +#+#+#+#+#+   +#+
