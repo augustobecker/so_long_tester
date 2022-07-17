@@ -12,16 +12,18 @@
 #
 #
 
- CYAN="\033[0;36m"
-GREEN="\033[0;32m"
-  RED="\033[0;31m"
-RESET="\033[0m"
+  CYAN="\033[0;36m"
+ GREEN="\033[0;32m"
+   RED="\033[0;31m"
+ RESET="\033[0m"
   MAP1="maps/valid/map-empty-line1.ber"
   MAP2="maps/valid/map-empty-line2.ber"
   MAP3="maps/valid/map-empty-line3.ber"
+  MAP4="maps/valid/map-empty-line4.ber"
 ERROR1=$(./../so_long $MAP1 | grep "Error" | wc -l)
 ERROR2=$(./../so_long $MAP2 | grep "Error" | wc -l)
 ERROR3=$(./../so_long $MAP3 | grep "Error" | wc -l)
+ERROR4=$(./../so_long $MAP3 | grep "Error" | wc -l)
 
 if [ ${ERROR1} -ge 1 ]
 then
@@ -38,6 +40,13 @@ else
 fi
 
 if [ ${ERROR3} -ge 1 ]
+then
+	echo -e -n "$GREEN[OK] $RESET"
+else
+	echo -e -n "$RED[KO] $RESET"
+fi
+
+if [ ${ERROR4} -ge 1 ]
 then
 	echo -e "$GREEN[OK] $RESET"
 else
