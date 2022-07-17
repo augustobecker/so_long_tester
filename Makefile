@@ -23,6 +23,7 @@ TESTS			= ${PATH_TEST}/check-for-no-map.sh 		\
 			${PATH_TEST}/check-for-multiple-argv.sh		\
 			${PATH_TEST}/check-for-invalid-extension.sh	\
 			${PATH_TEST}/check-for-empty-line.sh 		\
+			${PATH_TEST}/check-for-not-rectangular-map.sh	\
 			${PATH_TEST}/check-for-invalid-parameter.sh	\
 			${PATH_TEST}/check-for-missing-W.sh		\
 			${PATH_TEST}/check-for-missing-C.sh		\
@@ -55,6 +56,9 @@ invalid-extension:
 empty-line:
 			@ ./${PATH_TEST}/check-for-empty-line.sh
 
+not-rectangular:
+			@ ./${PATH_TEST}/check-for-not-rectangular-map.sh	
+				
 invalid-paramater:
 			@ ./${PATH_TEST}/check-for-invalid-parameter.sh
 
@@ -85,6 +89,7 @@ tester:
 			@ ./${PATH_TEST}/check-for-multiple-argv.sh
 			@ ./${PATH_TEST}/check-for-invalid-extension.sh
 			@ ./${PATH_TEST}/check-for-empty-line.sh
+			@ ./${PATH_TEST}/check-for-not-rectangular-map.sh
 			@ ./${PATH_TEST}/check-for-invalid-parameter.sh
 			@ ./${PATH_TEST}/check-for-missing-W.sh
 			@ ./${PATH_TEST}/check-for-missing-C.sh
@@ -96,5 +101,5 @@ tester:
 			@ echo
 
 .PHONY:			all m game permission no-map miss-argv mult-argv 		\
-			invalid-extension empty-line invalid-paramater			\
-			miss-w miss-c miss-e miss-p extra-p tester
+			invalid-extension empty-line not-rectangular			\
+			invalid-paramater miss-w miss-c miss-e miss-p extra-p tester
