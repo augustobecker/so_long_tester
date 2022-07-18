@@ -27,5 +27,3 @@ then
 else
 	echo -e "${CYAN}Check for missing argv: $RED [KO] $RESET"
 fi
-
-rm check
