@@ -28,5 +28,3 @@ then
 else
 	echo -e "${CYAN}Check for no Map: $RED              [KO] $RESET"
 fi
-
-rm check
