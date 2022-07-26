@@ -55,10 +55,9 @@ make [test_name] = roda apenas os testes da categoria requerida.
 <h2  align="center"> Como funciona:</h2>
 
 Esse tester usa alguns mapas inválidos para testar as validações de Mapa.
-Caso retorne OK quando o so_long executado com os mapas retorna "Error"(como pedido no subject).
+Ele retorna OK caso o so_long, quando executado com os mapas, retorna "Error"(como pedido no subject).
 
-Se estiver buscando uma implementação do so_long, você pode conferir meu projeto aqui: [so_long](https://github.com/augustobecker/so_long).
-
+Se estiver buscando uma implementação do so_long, você pode conferir meu projeto aqui:  [so_long](https://github.com/augustobecker/so_long).
 	
 <h2 align="center" id="42-cursus"> 42 Cursus </h2>
 	
