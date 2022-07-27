@@ -38,7 +38,7 @@ Como:
 
 <h2  align="center"> Como utilizar:</h2>
  
-Clone esse tester dentro do epositório do seu so_long .
+Clone esse tester dentro do repositório do seu so_long.
 	
 ## Comandos
 	
