@@ -16,10 +16,10 @@
  GREEN="\033[0;32m"
    RED="\033[0;31m"
  RESET="\033[0m"
-  MAP1="maps/invalid/map-missing-P.ber"
-  MAP2="maps/invalid/map-missing-P.ber"
-  MAP3="maps/invalid/map-missing-P.ber"
-  MAP4="maps/invalid/map-missing-P.ber"
+  MAP1="maps/invalid/map-missing-P-1.ber"
+  MAP2="maps/invalid/map-missing-P-2.ber"
+  MAP3="maps/invalid/map-missing-P-3.ber"
+  MAP4="maps/invalid/map-missing-P-4.ber"
 ERROR1=$(./../so_long $MAP1 | grep "Error" | wc -l)
 ERROR2=$(./../so_long $MAP2 | grep "Error" | wc -l)
 ERROR3=$(./../so_long $MAP3 | grep "Error" | wc -l)
