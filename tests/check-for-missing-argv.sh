@@ -25,5 +25,5 @@ if [ ${ERROR} -ge 1 ]
 then
 	echo -e "${CYAN}Check for missing argv: $GREEN	[OK] $RESET"
 else
-	echo -e "${CYAN}Check for missing argv: $RED [KO] $RESET"
+	echo -e "${CYAN}Check for missing argv: $RED	[KO] $RESET"
 fi
