@@ -34,7 +34,12 @@ Como:
 • Mapa faltando um parâmetro P.			[miss-p]
   
 • Mapa com um parâmetro P extra.   		[extra-p]
-	
+
+Novos Requisitos do Projeto | 🚧 Em construção |
+
+• Mapa com um parâmetro E extra.   		[extra-e]
+
+• Mapa sem um caminho válido.   		[no-valid-path]
 
 <h2  align="center"> Como utilizar:</h2>
  
