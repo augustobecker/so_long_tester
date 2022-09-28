@@ -1,6 +1,8 @@
 <h1 align="center">  so_long_tester - @42sp </h1>
 <p align="center">:information_source: Tester for the so_long project of 42 school.</p>
 
+<p align="center">[Version Oct. 2022] </p>
+
 <p align="center"><img height="280em" src="https://user-images.githubusercontent.com/81205527/160289951-59faa170-9201-403b-a83b-69f975549ef7.jpg"></p>
 
 <p align="center"><a href="https://www.42sp.org.br/" target="_blank"><img src="https://img.shields.io/static/v1?label=&message=SP&color=000&style=for-the-badge&logo=42""></a></p>
