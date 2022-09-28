@@ -34,7 +34,12 @@ Such as:
 • Missing P parameter. 		[miss-p]
   
 • Extra P parameter.   		[extra-p]
-	
+
+New Suject's Requirements | 🚧 Under construction |
+
+• Extra E parameter.   		[extra-e]
+
+• No valid path.   		[no-valid-path]
 
 <h2  align="center"> How to get started:</h2>
   
