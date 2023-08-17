@@ -27,7 +27,7 @@ ERROR4=$(./../so_long $MAP4 | grep "Error" | wc -l)
 
 if [ ${ERROR1} -ge 1 ]
 then
-	echo -e -n "${CYAN}Check Map not Rectangular:    $GREEN  [KO] $RESET"
+	echo -e -n "${CYAN}Check Map not Rectangular:    $GREEN  [OK] $RESET"
 else
 	echo -e -n "${CYAN}Check Map not Rectangular:    $RED  [KO] $RESET"
 fi
